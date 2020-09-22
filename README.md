@@ -112,7 +112,7 @@ On the other hand, for large data sets, the SVM model is inaccurate, and the dat
 
 In conclusion, I have employed three machine learning models:
 * Decision Tree
-* Linear Regression
+* Logistic Regression
 * K Nearest Neighbour (KNN)
 
 
