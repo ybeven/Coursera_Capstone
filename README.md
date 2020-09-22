@@ -135,6 +135,8 @@ The decision tree classifier in the scikit-learn library is used to run the deci
 
 #### 4.1.2 Confusion Matrix
 
+![image](https://github.com/ybeven/Coursera_Capstone/blob/master/imgs/01.jpg)
+
 
 
 
