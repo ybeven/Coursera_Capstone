@@ -16,37 +16,56 @@ The data consists of 37 independent variables and 194,673 rows.
 The models aim to predict the severity of an accident, I choose 5 features were selected for this project along with the target variable being Severity Code. Target variable are, INATTENTIONIND, UNDERINFL, WEATHER, ROADCOND, LIGHTCOND and SPEEDING.
 
 **SEVERITYCODE:** A code that corresponds to the severity of the collision.
+
 0: Property Damage Only Collision，in dataset：1
+
 1: Injury Collision, in dataset:2
 
 **INATTENTION:** Whether or not collision was due to inattention. (Y/N)
+
 0: NAN
+
 1: Yes
 
 **UNDERINFL:** Whether or not a driver involved was under the influence of drugs or alcohol.
+
 0: N
+
 1: Y
 
 **SPEEDING:** Whether or not speeding was a factor in the collision. (Y/N).
+
 0: NAN
+
 1: Y
 
 
 **LIGHTCOND：** The light conditions during the collision.
+
 0: Day Light
+
 1: Medium, represent Dark - Street Lights On, Dusk, Dawn, 
+
 2: Dark, represent Dark - No Street Lights, Dark - Street Lights Off, Dark - Unknown Lighting
+
 other: Unknow
 
 **WEATHER:** A description of the weather conditions during the time of the collision.
+
 0: Clear
+
 1: Overcast, Partly Cloudy
+
 2: Fog/Smog/Smoke, Blowing Sand/Dirt, Severe Crosswind
+
 3: Raining, Snowing, Sleet/Hail/Freezing Rain
 
 **ROADCOND:**
+
 0: Dry
+
 1: Snow/Slush, Sand/Mud/Dirt
+
 2: Wet, Ice, Standing Water, Oil
 
 **Hint:**
