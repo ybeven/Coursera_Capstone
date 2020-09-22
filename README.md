@@ -126,8 +126,8 @@ The decision tree classifier in the scikit-learn library is used to run the deci
 
 |              | precision | recall | f1-score |
 |--------------|-----------|--------|----------|
-| 0            | 0.70      | 1.00   | 0.82     |
-| 1            | 0.49      | 0.00   | 0.01     |
+| 0            | 0.65      | 0.70   | 0.82     |
+| 1            | 0.49      | 0.49   | 0.01     |
 | Accuracy     | 0.696     |        |          |
 | micro avg    | 0.70      | 0.70   | 0.70     |
 | macro avg    | 0.60      | 0.50   | 0.41     |
