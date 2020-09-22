@@ -126,21 +126,66 @@ The decision tree classifier in the scikit-learn library is used to run the deci
 
 |              | precision | recall | f1-score |
 |--------------|-----------|--------|----------|
-| 0            | 1.00      | 0.70   | 0.82     |
-| 1            | 0.00      | 0.49   | 0.01     |
+| 0            | 0.70      | 1.00   | 0.82     |
+| 1            | 0.49      | 0.00   | 0.01     |
 | Accuracy     | 0.696     |        |          |
 | micro avg    | 0.70      | 0.70   | 0.70     |
-| macro avg    | 0.50      | 0.60   | 0.41     |
-| weighted avg | 1.00      | 0.70   | 0.82     |
+| macro avg    | 0.60      | 0.50   | 0.41     |
+| weighted avg | 0.64      | 0.70   | 0.57     |
 
 #### 4.1.2 Confusion Matrix
 
 ![image](https://github.com/ybeven/Coursera_Capstone/blob/master/imgs/01.jpg)
 
+### 4.2 Logistic Regression
+
+#### 4.2.1 Classification Report
+
+|              | precision | recall | f1-score |
+|--------------|-----------|--------|----------|
+| 0            | 0.70      | 1.00   | 0.82     |
+| 1            | 0.40      | 0.00   | 0.00     |
+| Accuracy     | 0.696     |        |          |
+| micro avg    | 0.70      | 0.70   | 0.70     |
+| macro avg    | 0.55      | 0.50   | 0.41     |
+| weighted avg | 0.61      | 0.70   | 0.57     |
+| Log Loss     | 0.611     |        |          |
+
+#### 4.2.2 Confusion Matrix
+
+![image](https://github.com/ybeven/Coursera_Capstone/blob/master/imgs/02.jpg)
+
+### 4.3 KNN
+
+#### 4.3.1 Best K Value
+k-Nearest Neighbor classifier was used from the scikit-learn library to run the k-Nearest Neighbor machine learning classifier on the Car Accident Severity data. The best K, as shown below, for the model where the highest accuracy exists is at 6.
+![image](https://github.com/ybeven/Coursera_Capstone/blob/master/imgs/03.jpg)
+![image](https://github.com/ybeven/Coursera_Capstone/blob/master/imgs/04.jpg)
+
+#### 4.3.2 Classification Report
+
+|              | precision | recall | f1-score |
+|--------------|-----------|--------|----------|
+| 0            | 0.70      | 0.98   | 0.82     |
+| 1            | 0.40      | 0.03   | 0.05     |
+| Accuracy     | 0.692     |        |          |
+| macro avg    | 0.55      | 0.50   | 0.43     |
+| weighted avg | 0.61      | 0.69   | 0.58     |
+
+## 5. Discussion
+
+| Method              | Average f1-Score | Jaccard | Property Damage (0) vs Injury(1) | Precision | Recall |
+|---------------------|------------------|---------|----------------------------------|-----------|--------|
+| Decision Tree       | 0.574            | 0.6962  | 0                                | 0.65      | 0.7    |
+|                     |                  |         | 1                                | 0.45      | 0.49   |
+| Logistic Regression | 0.572            | 0.6961  | 0                                | 0.7       | 1      |
+|                     |                  |         | 1                                | 0.4       | 0      |
+| KNN                 | 0.583            | 0.6922  | 0                                | 0.98      | 0.7    |
+|                     |                  |         | 1                                | 0.03      | 0.316  |
 
 
-
-
+When comparing all the models by their f1-scores, Jaccard, Precision and Recall, we can have a clearer picture in terms of the accuracy of the three models individually as a whole and how well they perform for each output of the target variable. When comparing these scores, we can see that the f1-score is highest for KNN at 0.583. However, later when we compare the precision and recall for each of the model, we can see that the KNN model performs poorly in the precision of 1 at 0.03. The variance is too high for the model to be selected as a viable option. We also can see that the Decision Tree has a more balanced precision for 0 and 1. Furthermore, the average f1-score of Logistic Regression and Decision Tree are very close. 
+Based on the above table, we can use KNN model to predict car accident severity.
 ## Conclusion
-give the conclusion at last.
 
+After evaluating the data and output of the machine learning model, some suggestions can be made for stakeholders. The government can evaluate how many accidents have occurred on roads or places with unsatisfactory light conditions in a specific area, and can improve the traffic conditions in the areas where the most serious accidents occur to minimize the impact of these factors. In view of this, in order to avoid serious accidents, given the lighting conditions, road conditions and weather conditions, car drivers can also use these data to assess when to take additional precautions on the road.
